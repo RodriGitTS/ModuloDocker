@@ -1,8 +1,9 @@
-# Configurar odoo con Docker compose#
+# Configurar odoo con Docker compose
 
 Software necesario
 - Docker desktop
 - Windows PowerShell (Con permisos de administrador)
+  
 ## Empezar un servidor PostgreSQL y una instancia de Odoo
 ```
 $ docker run -d -e POSTGRES_USER=odoo -e POSTGRES_PASSWORD=odoo -e POSTGRES_DB=postgres --name db postgres:15
@@ -102,7 +103,7 @@ docker-compose up -d
 
 ## Añadir el contenido dentro de los directorios
 
-Par añadir los archivos necesarios para el funcionamiento del módulo se utiliza el siguiente comando
+Para añadir los archivos necesarios para el funcionamiento del módulo se utiliza el siguiente comando
 ```
 odoo scaffold dam
 ```
