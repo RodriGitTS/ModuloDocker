@@ -1,0 +1,60 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+
+    <record model="ir.ui.view" id="tarea.list">
+      <field name="name">tarea list</field>
+      <field name="model">tarea.tarea</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="value"/>
+          
+        </tree>
+      </field>
+    </record>
+
+
+    <!-- actions opening views on models -->
+<!--
+    <record model="ir.actions.act_window" id="tarea.action_window">
+      <field name="name">tarea window</field>
+      <field name="res_model">tarea.tarea</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+-->
+
+    <!-- server action to the one above -->
+<!--
+    <record model="ir.actions.server" id="tarea.action_server">
+      <field name="name">tarea server</field>
+      <field name="model_id" ref="model_tarea_tarea"/>
+      <field name="state">code</field>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "tree,form",
+          "res_model": model._name,
+        }
+      </field>
+    </record>
+-->
+
+    <!-- Top menu item -->
+<!--
+    <menuitem name="tarea" id="tarea.menu_root"/>
+-->
+    <!-- menu categories -->
+<!--
+    <menuitem name="Menu 1" id="tarea.menu_1" parent="tarea.menu_root"/>
+    <menuitem name="Menu 2" id="tarea.menu_2" parent="tarea.menu_root"/>
+-->
+    <!-- actions -->
+<!--
+    <menuitem name="List" id="tarea.menu_1_list" parent="tarea.menu_1"
+              action="tarea.action_window"/>
+    <menuitem name="Server to list" id="tarea" parent="tarea.menu_2"
+              action="tarea.action_server"/>
+-->
+  </data>
+</odoo>
