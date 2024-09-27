@@ -86,7 +86,7 @@ volumes:
   odoo-db-data:
 ```
 
-### Contenido de odoo.conf
+### Contenido de "odoo.conf"
 ```
 [options]
 addons_path = /mnt/extra-addons
